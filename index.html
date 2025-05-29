@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Jennifer Aldana - Resume</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="brief.png" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: url("background.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        margin: 0;
+      }
+
+      header {
+        background-color: darkslategray;
+        padding: 30px;
+        text-align: center;
+        font-size: 25px;
+        color: white;
+      }
+
+      nav {
+        float: left;
+        width: 30%;
+        background: rgba(255, 255, 255, 0.85);
+        padding: 20px;
+        min-height: 100vh;
+      }
+
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      nav ul li {
+        margin: 10px 0;
+      }
+
+      nav a {
+        text-decoration: none;
+        font-weight: bold;
+        color: cadetblue;
+        cursor: pointer;
+        text-decoration: underline;
+      }
+
+      nav a:hover {
+        color: darkgreen;
+      }
+
+      article {
+        float: left;
+        width: 70%;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 20px;
+        min-height: 100vh;
+      }
+
+      footer {
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: white;
+        clear: both;
+      }
+
+      img.logo {
+        vertical-align: middle;
+        margin-right: 10px;
+        width: 50px;
+        height: 40px;
+      }
+
+      section.content-section {
+        display: none;
+      }
+
+      section.content-section.active {
+        display: block;
+      }
+
+      @media (max-width: 800px) {
+        nav,
+        article {
+          width: 100%;
+          float: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Jennifer Aldana - Resume</h2>
+    </header>
+
+    <section>
+      <nav>
+        <ul>
+          <li><a onclick="showSection('contact')">Contact</a></li>
+          <li><a onclick="showSection('summary')">Summary</a></li>
+          <li><a onclick="showSection('education')">Education</a></li>
+          <li><a onclick="showSection('coursework')">Coursework</a></li>
+          <li><a onclick="showSection('employment')">Employment</a></li>
+        </ul>
+      </nav>
+
+      <article>
+        <!-- Contact -->
+        <section id="contact" class="content-section active">
+          <h2>Connect with Me</h2>
+          <h3>Email:</h3>
+          <span>Jmichellea0316@gmail.com</span><br /><br />
+          <h3>
+            LinkedIn
+            <img class="logo" src="linkedIn.png" alt="LinkedIn logo" />:
+          </h3>
+          <a
+            href="https://www.linkedin.com/in/jennifer-aldana01"
+            target="_blank"
+          >
+            https://www.linkedin.com/in/jennifer-aldana01
+          </a>
+        </section>
+
+        <!-- Summary -->
+        <section id="summary" class="content-section">
+          <h2>Professional Summary</h2>
+          <p>
+            Recent Business graduate with a concentration in Management
+            Information Systems. Driven and dedicated IT professional seeking a
+            challenging position in the technology field to utilize excellent
+            communication, interpersonal skills.
+          </p>
+          <br />
+          <p>Key Strengths:</p>
+          <ul>
+            <li>Languages: Native in English and Spanish</li>
+            <li>Highly adaptable</li>
+            <li>Analytical abilities</li>
+            <li>Team-oriented</li>
+            <li>Excellent communication skills</li>
+            <li>Great problem-solving skills</li>
+          </ul>
+        </section>
+
+        <!-- Education -->
+        <section id="education" class="content-section">
+          <h2>Education</h2>
+          <h4>
+            Bachelors of Science in Business | Concentration: Management
+            Information Systems
+          </h4>
+          <p>
+            <img class="logo" src="gmu_logo.png" alt="GMU logo" /> George Mason
+            University - Fairfax, VA
+          </p>
+          <ul>
+            <li>Attended: Jan 2023 - Dec 2024</li>
+          </ul>
+
+          <h4>
+            Associate of Science in Business | Concentration: Business
+            Administration
+          </h4>
+          <p>
+            <img class="logo" src="Nova_logo.png" alt="NOVA logo" /> Northern
+            Virginia Community College - Manassas, VA
+          </p>
+          <ul>
+            <li>Attended: Aug 2019 - May 2021</li>
+          </ul>
+        </section>
+
+        <!-- Coursework -->
+        <section id="coursework" class="content-section">
+          <h2>Relevant Coursework</h2>
+
+          <h4>Principles of Programming</h4>
+          <ul>
+            <li>
+              Built fundamental skills in Python, using Thonny to write, debug,
+              and execute scripts.
+            </li>
+            <li>
+              Implemented functions, loops, conditionals, and lists for solving
+              business problems.
+            </li>
+          </ul>
+
+          <h4>Database Management Systems</h4>
+          <ul>
+            <li>
+              Introduced to core relational database concepts and DBMS
+              structures.
+            </li>
+            <li>
+              Applied SQL in assignments to query, update, and manage data
+              across tables.
+            </li>
+            <li>
+              Used DB Browser for SQLite and Microsoft SQL Server to build and
+              maintain databases.
+            </li>
+          </ul>
+
+          <h4>E-Business Systems Development</h4>
+          <ul>
+            <li>
+              Experience with HTML, CSS, and JavaScript to design and build
+              websites.
+            </li>
+            <li>
+              Developed interactive pages using Visual Studio with proper
+              styling and layout techniques.
+            </li>
+          </ul>
+
+          <h4>Intro to Programming for Business Applications</h4>
+          <ul>
+            <li>Studied software development lifecycle, focusing on Java.</li>
+            <li>
+              Applied object-oriented programming to solve business problems.
+            </li>
+            <li>
+              Used JGrasp and Android Studio for hands-on Java programming
+              experience.
+            </li>
+          </ul>
+        </section>
+
+        <!-- Employment -->
+        <section id="employment" class="content-section">
+          <h2>Employment History</h2>
+          <h4>Sales Associate | T.J. Maxx - Harrisonburg, VA</h4>
+          <ul>
+            <li>
+              Assisted customers with product inquiries and provided excellent
+              customer service.
+            </li>
+            <li>
+              Resolved customer complaints and issues in a timely and
+              professional manner.
+            </li>
+            <li>
+              Processed sales transactions, handling cash and credit card
+              payments.
+            </li>
+            <li>Collaborated with team members to achieve store goals.</li>
+            <li>
+              Mentored and trained 5 new team members on store policies and
+              point-of-sale system usage.
+            </li>
+          </ul>
+
+          <h4>Store Manager | City Wireless - Woodbridge, VA</h4>
+          <ul>
+            <li>
+              Provided hands-on customer support, assisting 25+ customers daily
+              with device configuration, setup, and troubleshooting to ensure
+              optimal user experience.
+            </li>
+            <li>
+              Organized, planned, and maintained inventory levels to assure
+              availability of products.
+            </li>
+            <li>Developed Excel spreadsheets to present metrics.</li>
+            <li>Pulled daily and monthly sales using Quickbooks</li>
+            <li>Held events to advertise merchandise and boost sales.</li>
+            <li>Maintained a welcoming atmosphere.</li>
+          </ul>
+        </section>
+      </article>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Jennifer Aldana</p>
+    </footer>
+
+    <script>
+      function showSection(id) {
+        const sections = document.querySelectorAll(".content-section");
+        sections.forEach((section) => section.classList.remove("active"));
+        document.getElementById(id).classList.add("active");
+      }
+    </script>
+  </body>
+</html>
